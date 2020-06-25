@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+body{
+	background-color: #111;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+h1{
+	font-family: 'Press Start 2P', cursive;
+	margin: 0;
+	padding: 0;
+	color:#fff;
+	font-size:80px;
+}
+
+h1 span{
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	animation: animate 5s linear infinite;
+}
+
+h1 span:nth-child(3){
+	animation-delay: 0.75s
+}
+
+h1 span:nth-child(4){
+	animation-delay: 0.75s
+}
+
+h1 span:nth-child(6){
+	animation-delay: 0.75s
+}
+
+h1 span:nth-child(7){
+	animation-delay: 0.75s
+}
+
+h1 span:nth-child(8){
+	animation-delay: 0.75s
+}
+
+h1 span:nth-child(15){
+	animation: animate 0.21s linear infinite;
+}
+
+@keyframes animate{
+0%,100%
+	{
+		color:#111;
+		filter:blur(2px);
+		text-shadow:
+		 0 0 10px #CA34B5,
+		 0 0 20px #CA34B5,
+		 0 0 40px #CA34B5,
+		 0 0 60px #CA34B5,
+		 0 0 100px #CA34B5;
+
+	}
+30%,70%
+	{
+		color:#fff;
+		filter:blur(0px);
+		text-shadow: 0 0 10px none;
+	}
+}
